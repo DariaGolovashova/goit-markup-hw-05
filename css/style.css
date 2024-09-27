@@ -542,6 +542,7 @@ img {
   background-color: #31d0aa;
 }
 .footer-form {
+  gap: 24px;
   display: flex;
 
   justify-content: flex-start;
