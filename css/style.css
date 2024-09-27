@@ -582,9 +582,6 @@ img {
   color: #ffffff;
 }
 
-.subscribe-btn {
-  text-align: justify;
-}
 .subscribe-form-btn {
   border-radius: 4px;
   padding: 8px 16 px 8px 24px;
@@ -692,7 +689,6 @@ img {
 
 .feedback-form-field {
   width: 360px;
-  height: 58px;
   margin-bottom: 8px;
 }
 .feedback-form-label {
@@ -845,9 +841,7 @@ img {
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 24px 96px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
