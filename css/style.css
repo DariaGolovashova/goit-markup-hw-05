@@ -545,7 +545,7 @@ img {
   gap: 24px;
   display: flex;
 
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -585,7 +585,7 @@ img {
 
 .subscribe-form-btn {
   border-radius: 4px;
-  padding: 8px 16 px 8px 24px;
+  padding: 8px 16px 8px 24px;
   width: 165px;
   height: 40px;
   background-color: #4d5ae5;
@@ -593,7 +593,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
+  margin-bottom: auto;
   color: #ffffff;
 }
 
