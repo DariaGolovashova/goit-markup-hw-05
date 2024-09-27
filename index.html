@@ -464,7 +464,7 @@
     </main>
 
     <!--=====================================Footer===========================================-->
-    <footer class="footer">
+    <footer class="footer container footer-container">
       <div class="container footer-container">
         <div class="footer-part">
           <a class="footer-logo logo" href="./index.html"
@@ -515,11 +515,13 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form">
-          <form class="footer-subscribe-form">
+
+        <!--<div class="footer-form">-->
+        <form class="footer-form">
+          <div class="footer-subscribe-form">
             <label class="footer-subscribe-form-label" for="Subscribe"
-              >Subscribe</label
-            >
+              >Subscribe
+            </label>
             <input
               class="subscribe-form-input"
               type="text"
@@ -527,15 +529,113 @@
               id="Subscribe"
               placeholder="E-mail"
             />
-
-            <button class="subscribe-form-btn" type="submit">Subscribe</button>
-          </form>
-        </div>
+          </div>
+          <div class="subscribe-btn">
+            <button class="subscribe-form-btn" type="submit">
+              Subscribe
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
-    <div class="backdrop">
+    <!---------------------------------Modal--------------------------------------->
+    <div class="modal-backdrop is-open">
       <div class="modal">
-        <p>Vjlfslkdn;nf;sdnf</p>
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-slogan">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="feedback-form">
+          <!-----------------------------------User-name-field-------------------------->
+          <div class="feedback-form-field">
+            <label class="feedback-form-label" for="user-name">Name</label>
+            <div class="feedback-form-input-wrapper">
+              <input
+                class="feedback-form-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                required
+              />
+              <svg class="feedback-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <!-----------------------------------Phone-number-field-------------------------->
+          <div class="feedback-form-field">
+            <label class="feedback-form-label" for="phone-number">Phone</label>
+            <div class="feedback-form-input-wrapper">
+              <input
+                class="feedback-form-input"
+                id="phone-number"
+                name="phone-number"
+                type="tel"
+                required
+              />
+              <svg class="feedback-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <!-----------------------------------E-mail-field-------------------------->
+          <div class="feedback-form-field">
+            <label class="feedback-form-label" for="e-mail">Phone</label>
+            <div class="feedback-form-input-wrapper">
+              <input
+                class="feedback-form-input"
+                id="e-mailr"
+                name="e-mail"
+                type="email"
+                required
+              />
+              <svg class="feedback-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <!-----------------------------------User coment-field-------------------------->
+          <div class="feedback-form-field">
+            <label class="feedback-form-label" for="user coment">Coment</label>
+            <textarea
+              class="feedback-form-coment"
+              name="user coment"
+              id="user coment"
+              placeholder="Text input"
+              required
+            ></textarea>
+          </div>
+          <!-----------------------Check-Box--------------->
+          <div class="feedback-form-checkbox-wrapper">
+            <input
+              class="feedback-form-checkbox visually-hidden"
+              id="privacy-policy"
+              type="checkbox"
+              name="privacy-policy"
+              value="true"
+              required
+            />
+            <label class="feedback-form-checkbox-label" for="privacy-policy">
+              <span class="feedback-form-checkbox-area">
+                <svg class="feedback-form-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="feedback-form-policy-link another-color" href="">
+                Pivacy Policy
+              </a>
+            </label>
+          </div>
+          <button class="feedbeck-form-send-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </body>
