@@ -542,7 +542,7 @@
       </div>
     </footer>
     <!---------------------------------Modal--------------------------------------->
-    <div class="modal-backdrop">
+    <div class="modal-backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" width="8" height="8">
@@ -587,12 +587,12 @@
           </div>
           <!-----------------------------------E-mail-field-------------------------->
           <div class="feedback-form-field">
-            <label class="feedback-form-label" for="e-mail">Phone</label>
+            <label class="feedback-form-label" for="user-mail">Email</label>
             <div class="feedback-form-input-wrapper">
               <input
                 class="feedback-form-input"
-                id="e-mailr"
-                name="e-mail"
+                id="user-mailr"
+                name="user-mail"
                 type="email"
                 required
               />
@@ -602,12 +602,14 @@
             </div>
           </div>
           <!-----------------------------------User coment-field-------------------------->
-          <div class="feedback-form-field">
-            <label class="feedback-form-label" for="user coment">Coment</label>
+          <div class="feedback-form-field feedback-form-field-comment">
+            <label class="feedback-form-label" for="user-comment"
+              >Comment</label
+            >
             <textarea
-              class="feedback-form-coment"
-              name="user coment"
-              id="user coment"
+              class="feedback-form-comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
               required
             ></textarea>
@@ -616,13 +618,13 @@
           <div class="feedback-form-checkbox-wrapper">
             <input
               class="feedback-form-checkbox visually-hidden"
-              id="privacy-policy"
+              id="user-privacy"
               type="checkbox"
-              name="privacy-policy"
+              name="user-privacy"
               value="true"
               required
             />
-            <label class="feedback-form-checkbox-label" for="privacy-policy">
+            <label class="feedback-form-checkbox-label" for="user-privacy">
               <span class="feedback-form-checkbox-area">
                 <svg class="feedback-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
@@ -630,7 +632,7 @@
               </span>
               I accept the terms and conditions of the
               <a class="feedback-form-policy-link another-color" href="">
-                Pivacy Policy
+                Privacy Policy
               </a>
             </label>
           </div>
