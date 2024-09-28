@@ -639,7 +639,7 @@ img {
   min-height: 584px;
   border-radius: 4px;
   transform: translate(-50%, -50%);
-
+  padding: 72px 24px 24px 24px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
@@ -712,6 +712,7 @@ img {
 .feedback-form-input {
   min-width: 165px;
   height: 40px;
+  width: 100%;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
@@ -763,7 +764,8 @@ img {
 .feedback-form-coment::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
-.feedback-form-coment:focus {
+.feedback-form-coment:focus,
+.feedback-form-coment:hover {
   border-color: #4d5ae5;
 }
 
